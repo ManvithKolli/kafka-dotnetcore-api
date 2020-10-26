@@ -58,7 +58,7 @@ namespace KafkaInfrastructure.Consumer.Domain
         {
             var builder = new StringBuilder();
 
-            builder.Append($"Topics:{Topics} {separator}");
+            builder.Append($"Topics:{JsonConvert.SerializeObject(Topics)} {separator}");
             builder.Append($"GroupId :{GroupId} {separator}");
             builder.Append($"AutoOffsetReset :{AutoOffsetReset} {separator}");
             builder.Append($"IsolationLevel :{IsolationLevel} {separator}");

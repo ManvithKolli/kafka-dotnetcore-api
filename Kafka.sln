@@ -5,9 +5,13 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaInfrastructure", "src\KafkaInfrastructure\KafkaInfrastructure.csproj", "{5FF2C7FA-84F7-4E75-B249-4DB0CEF42A2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaProducer", "examples\Producer\KafkaProducer\KafkaProducer.csproj", "{63C53746-AA63-48F4-A92F-89D1C1780016}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaProducer", "examples\Producer\KafkaProducer\KafkaProducer.csproj", "{63C53746-AA63-48F4-A92F-89D1C1780016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaConsumer", "examples\Consumer\KafkaConsumer\KafkaConsumer.csproj", "{7BBAA18D-88F2-4865-A5EE-779CA855839F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaConsumer", "examples\Consumer\KafkaConsumer\KafkaConsumer.csproj", "{7BBAA18D-88F2-4865-A5EE-779CA855839F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{652BA44E-DF96-4A85-A295-455E8FA5D8DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{3C32C8AF-1161-4BE0-8F9B-0A1CDB51DC67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FF2C7FA-84F7-4E75-B249-4DB0CEF42A2A} = {3C32C8AF-1161-4BE0-8F9B-0A1CDB51DC67}
+		{63C53746-AA63-48F4-A92F-89D1C1780016} = {652BA44E-DF96-4A85-A295-455E8FA5D8DE}
+		{7BBAA18D-88F2-4865-A5EE-779CA855839F} = {652BA44E-DF96-4A85-A295-455E8FA5D8DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33B5BDC8-9D9F-4F52-8634-BDCD654FC30F}
